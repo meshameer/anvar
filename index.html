@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anvar Farook</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #c9a96e;
+      --gold-light: #e8cc9a;
+      --gold-dark: #a6824a;
+      --bg: #faf8f4;
+      --text: #2c2416;
+      --text-muted: #7a6a4f;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: var(--bg);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    /* Header */
+    header {
+      width: 100%;
+      background: var(--gold);
+      padding: 12px 24px;
+      text-align: center;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    /* Hero */
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 24px 40px;
+      text-align: center;
+    }
+
+    .avatar {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      border: 5px solid var(--gold);
+      box-shadow: 0 8px 32px rgba(201, 169, 110, 0.35);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3.5rem;
+      color: #fff;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 8vw, 5rem);
+      font-weight: normal;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+
+    /* Card */
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 36px 40px;
+      max-width: 520px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+      border-top: 4px solid var(--gold);
+      text-align: center;
+    }
+
+    .card p {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+    }
+
+    .card a {
+      color: var(--gold-dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .card a:hover { text-decoration: underline; }
+
+    /* Footer */
+    footer {
+      width: 100%;
+      padding: 24px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      border-top: 1px solid #e8dfc8;
+    }
+
+    footer a {
+      color: var(--gold-dark);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="https://farooks.com">farooks.com</a>
+  </header>
+
+  <main>
+    <div class="avatar">A</div>
+    <h1>Anvar</h1>
+    <p class="subtitle">Farook Family</p>
+
+    <div class="card">
+      <p>
+        Welcome to Anvar's corner of the web. Part of the
+        <a href="https://farooks.com">Farooks family</a> — a place for
+        connection, memory, and belonging.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2026 &mdash; <a href="https://farooks.com">farooks.com</a>
+  </footer>
+
+</body>
+</html>
